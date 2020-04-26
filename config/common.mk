@@ -177,5 +177,9 @@ ifeq ($(BLISS_BUILD_VARIANT), goapps)
 $(call inherit-product, vendor/gapps-go/gapps-go.mk)
 endif
 
+# AICP Ad-block
+PRODUCT_PACKAGES += \
+    hosts.aicp_adblock
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/bliss/config/partner_gms.mk
