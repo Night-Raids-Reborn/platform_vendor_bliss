@@ -167,6 +167,11 @@ ifeq ($(BLISS_BUILD_VARIANT), foss)
 $(call inherit-product, vendor/foss/foss.mk)
 endif
 
+# Include Lawnchair
+ifeq ($(USE_LAWNCHAIR),true)
+$(call inherit-product, vendor/lawnchair/lawnchair.mk)
+endif
+
 # Go-gapps
 ifeq ($(BLISS_BUILD_VARIANT), goapps)
 $(call inherit-product, vendor/gapps-go/gapps-go.mk)
