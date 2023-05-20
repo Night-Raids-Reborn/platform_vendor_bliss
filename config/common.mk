@@ -150,7 +150,7 @@ PRODUCT_COPY_FILES += \
 
 # Gapps
 ifeq ($(BLISS_BUILD_VARIANT), gapps)
-$(call inherit-product, vendor/gapps/config.mk)
+$(call inherit-product, vendor/gapps/gapps.mk)
 endif
 
 # Plugins
